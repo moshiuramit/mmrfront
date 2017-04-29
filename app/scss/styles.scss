@@ -1,0 +1,19 @@
+@import 'compass/css3';
+
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/mixins';
+html {
+  font-size: 14px;
+}
+body{
+
+}
+
+@import 'layouts/header';
+@import 'layouts/hero';
+@import 'layouts/layout';
+@import 'layouts/common';
+@import 'layouts/footer';
+
+

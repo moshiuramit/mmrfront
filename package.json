@@ -1,0 +1,22 @@
+{
+  "name": "mrafront",
+  "version": "1.0.0",
+  "description": "Front end Build system for Frontend Development.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "Front End Development Build System"
+  },
+  "keywords": [
+    "Frontend",
+    "tools"
+  ],
+  "author": "Moshiur Amit",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-for-compass": "0.0.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0"
+  }
+}

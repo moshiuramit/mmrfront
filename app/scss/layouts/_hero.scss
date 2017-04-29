@@ -1,0 +1,17 @@
+//- Style For Home Page Hero Section
+.home-hero {
+  text-align: center;
+  position: relative;
+  img {
+    max-width: 100%;
+  }
+  .caption {
+    max-width: 740px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    bottom: 0;
+    margin: auto;
+  }
+}

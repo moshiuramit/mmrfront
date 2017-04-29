@@ -1,0 +1,14 @@
+extends layouts/_standard
+
+block append global_variables
+  -var title= 'Hello ', bodyClass='page general-page', project_name= 'iPay'
+
+
+block header
+  include partials/_header
+
+
+block main_content
+  include partials/home/_home_hero
+
+
