@@ -1,23 +1,18 @@
-/* line 6, ../scss/styles.scss */
 html {
   font-size: 14px;
 }
 
-/* line 1, ../scss/layouts/_header.scss */
 .header {
   background: #3CAC9E;
 }
 
-/* line 2, ../scss/layouts/_hero.scss */
 .home-hero {
   text-align: center;
   position: relative;
 }
-/* line 5, ../scss/layouts/_hero.scss */
 .home-hero img {
   max-width: 100%;
 }
-/* line 8, ../scss/layouts/_hero.scss */
 .home-hero .caption {
   max-width: 740px;
   position: absolute;

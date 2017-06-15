@@ -7,6 +7,10 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
     compass = require('gulp-for-compass'),
     plumber = require('gulp-plumber'),
+    concat = require('gulp-concat'),
+    cssMinify = require('gulp-cssmin'),
+    //uglify = require('uglify'),
+    imagemin = require('gulp-imagemin'),
     connect = require('gulp-connect');
 
 
@@ -32,17 +36,26 @@ gulp.task('sass', function(){
       .pipe(compass({
             sassDir: 'app/scss',
             cssDir: 'app/css',
-            force: false,
-            lineComments: false
+            force: true,
+            noLineComments: true,
+            debugInfo: false,
+            outputStyle: 'expanded'
         }))
       .pipe(connect.reload());
 });
 
+// scripts Task
+gulp.task('concatLib', function(){
+  gulp.src('app/js/vendor/*.js')
+      .pipe(concat('lib.js'))
+      .pipe(gulp.dest('./app/js'))
+      .pipe( connect.reload() );
+});
+
 // styles task
 
-// scripts Task
 
-// Connect
+// Connect Server
 gulp.task('connect', function(){
   connect.server({
     root: 'app',
@@ -51,7 +64,7 @@ gulp.task('connect', function(){
 });
 
 
-// Build Task
+// Build Task for Production
 gulp.task('build', function(){
   gulp.src('app/*.html')
       .pipe(gulp.dest('build'));
@@ -79,4 +92,4 @@ gulp.task('watch', function(){
 // Default Task
 ////////////////////////////////
 
-gulp.task('default',['jade','sass', 'connect', 'watch'])
+gulp.task('default',['jade','sass','concatLib', 'connect', 'watch'])

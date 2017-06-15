@@ -1,7 +1,7 @@
 {
-  "name": "mrafront",
+  "name": "mrrfront",
   "version": "1.0.0",
-  "description": "Front end Build system for Frontend Development.",
+  "description": "Front end Build system for Frontend Development.Includes sass, jade, live reload etc",
   "main": "gulpfile.js",
   "scripts": {
     "test": "Front End Development Build System"
@@ -14,9 +14,13 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.0.0",
+    "gulp-cssmin": "^0.2.0",
     "gulp-for-compass": "0.0.2",
+    "gulp-imagemin": "^3.3.0",
     "gulp-jade": "^1.1.0",
-    "gulp-plumber": "^1.1.0"
+    "gulp-plumber": "^1.1.0",
+    "uglify": "^0.1.5"
   }
 }
