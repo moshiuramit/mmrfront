@@ -1,6 +1,6 @@
 {
   "name": "mrrfront",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Front end Build system for Frontend Development.Includes sass, jade, live reload etc",
   "main": "gulpfile.js",
   "scripts": {
@@ -8,10 +8,11 @@
   },
   "keywords": [
     "Frontend",
-    "tools"
+    "gulp tools"
   ],
   "author": "Moshiur Amit",
   "license": "ISC",
+  "git": "https://github.com/moshiuramit/mmrfront",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
