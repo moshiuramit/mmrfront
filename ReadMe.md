@@ -1,10 +1,10 @@
 **Features of this Project**
 
-**Compile scss and compass**
-**compile jade to html**
-**gulp task runner to Server and watch files**
-**Livereload on edit**
-**And More **
+* Compile scss and compass
+* compile jade to html
+* gulp task runner to Server and watch files
+* Livereload on edit
+* And More 
 
 
 #Build 
