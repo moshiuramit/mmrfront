@@ -1,6 +1,6 @@
 {
   "name": "mrrfront",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Front end Build system for Frontend Development.Includes sass, jade, live reload etc",
   "main": "gulpfile.js",
   "scripts": {
