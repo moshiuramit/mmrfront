@@ -1,17 +1,21 @@
-Features of this Project
-Compile scss and compass
-compile jade to html
-Server and watch files
-Livereload on edit
+**Features of this Project**
+
+**Compile scss and compass**
+**compile jade to html**
+**gulp task runner to Server and watch files**
+**Livereload on edit**
+**And More **
+
+
 #Build 
 
-Prerequisites
+**Prerequisites**
 
 [node.js](https://nodejs.org/) and npm installed and ready-to-go
 git
 
 
-Installation 
+**Installation **
 
 Goto console/cmd
 if you have already installed node then, 
@@ -23,7 +27,7 @@ $ cd mmrfront
 ```
 
 
-Then Run the command: 
+**Then Run the command: **
 
 ```
 $ npm install
@@ -35,7 +39,7 @@ To Run project
 $ gulp
 ```
 
-Other commands :
+**Other commands :**
 
 ```
 gulp sass
@@ -44,5 +48,5 @@ gulp build
 ```
 (Will Create a folder build contain the application useable files.)
 
-Git Repo:
+#Git Repo:
 [mmrfront](https://github.com/moshiuramit/mmrfront)
