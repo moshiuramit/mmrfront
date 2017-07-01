@@ -44,10 +44,18 @@ gulp.task('sass', function(){
       .pipe(connect.reload());
 });
 
-// scripts Task
+// library scripts Task
 gulp.task('concatLib', function(){
   gulp.src('app/js/vendor/*.js')
       .pipe(concat('lib.js'))
+      .pipe(gulp.dest('./app/js'))
+      .pipe( connect.reload() );
+});
+
+// app scripts Task
+gulp.task('concatApp', function(){
+  gulp.src('app/js/app/*.js')
+      .pipe(concat('main.js'))
       .pipe(gulp.dest('./app/js'))
       .pipe( connect.reload() );
 });
